@@ -340,7 +340,7 @@ function AnimatedHeroHeadline() {
     return () => window.clearTimeout(timer);
   }, [phase, totalWords, visibleCount]);
 
-  return <h1 className="animated-headline" aria-label="Entertainment is better When we experience it   together.">{lines.map((line, lineIndex) => {
+  return <h1 className="animated-headline" aria-label="Entertainment is better When we experience it_together.">{lines.map((line, lineIndex) => {
     const offset = lines.slice(0, lineIndex).reduce((total, currentLine) => total + currentLine.length, 0);
     return <span className="headline-line" key={line.join('-')}>{line.map((word, wordIndex) => <span className={`hero-word ${word === 'together.' ? 'accent' : ''} ${offset + wordIndex < visibleCount ? 'is-visible' : ''}`} key={word}>{word}</span>)}</span>;
   })}</h1>; 
