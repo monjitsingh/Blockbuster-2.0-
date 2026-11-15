@@ -92,7 +92,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; }
   display: grid;
   grid-template-columns: minmax(0, 1fr) 380px;
   gap: 120px;
-  align-items: right;
+  align-items: center;
   position: relative;
   z-index: 1;
   padding-top: 38px;
