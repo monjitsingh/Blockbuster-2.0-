@@ -279,7 +279,7 @@ function Header({ route, onNavigate, onBack, mobileNav, onMobileNav }: { route: 
           <span><strong>BLOCKBUSTER</strong><b>2.0</b></span>
         </button>
 
-        <span className="brand-credit">Design By Monjit Singh</span>
+        <span className="brand-credit">Designed By Monjit Singh</span>
         <nav className={`main-nav ${mobileNav ? 'is-open' : ''}`}>
           <button className={route === 'home' ? 'active' : ''} onClick={() => onNavigate('home')}><Home size={15} /> Home</button>
           {mainLinks.map((link) => <button key={link} className={route === link ? 'active' : ''} onClick={() => onNavigate(link)}>{routeLabels[link]}</button>)}
