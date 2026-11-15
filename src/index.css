@@ -90,7 +90,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; }
 .hero-content {
   min-height: 645px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 390px;
+  grid-template-columns: minmax(0, 1fr) 380px;
   gap: 140px;
   align-items: center;
   position: relative;
