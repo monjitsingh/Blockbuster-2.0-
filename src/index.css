@@ -99,6 +99,13 @@ h1 em, h2 em { color: var(--blue); font-style: normal; }
 .hero-meta { margin-top: 28px; display: flex; gap: 21px; color: #99abc2; font: 10px var(--mono); text-transform: uppercase; letter-spacing: .08em; }
 .hero-meta span { display: flex; align-items: center; gap: 7px; }
 .hero-dashboard { width: min(100%, 380px); justify-self: end; border: 1px solid rgba(194,221,242,.23); padding: 17px; border-radius: 12px; background: rgba(8,27,58,.75); box-shadow: 0 20px 60px rgba(2,10,24,.3); backdrop-filter: blur(12px); animation: floatPanel 6s ease-in-out infinite; }
+/* Move dashboard towards the right on desktop */
+@media (min-width: 1200px) {
+  .hero-dashboard {
+    position: relative;
+    left: 50px;
+  }
+}
 @keyframes floatPanel { 50% { transform: translateY(-9px); } }
 .dashboard-head, .pulse-title, .pulse-foot, .hero-dashboard-grid, .status-row, .section-heading-row, .card-topline, .booking-head, .slider-labels, .booking-total, .panel-head { display: flex; align-items: center; justify-content: space-between; }
 .dashboard-head strong { display: block; color: white; font-size: 15px; margin-top: 6px; }
