@@ -64,7 +64,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 700; }
 .hero-word.is-visible { opacity: 1; filter: blur(0); transform: translateY(0) rotate(0); }
 .hero-word.accent { color: var(--yellow); }
 
-.site-header { position: sticky; top: 0; z-index: 20; background: rgba(245,247,249,.92); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(220,227,235,.8); }
+.site-header { position: sticky; top: 34px; z-index: 20; background: rgba(245,247,249,.92); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(220,227,235,.8); }
 .header-inner { width: min(1280px, calc(100% - 64px)); margin: 0 auto; min-height: 72px; display: flex; align-items: center; gap: 36px; }
 .brand { display: flex; align-items: center; gap: 10px; background: none; border: 0; padding: 0; color: var(--navy); text-align: left; }
 .brand-credit {
