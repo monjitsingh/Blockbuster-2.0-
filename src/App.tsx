@@ -230,7 +230,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#f5f7f9] text-[#101d35]">
+    <div className="min-h-screen overflow-x-clip bg-[#f5f7f9] text-[#101d35]">
       <AnnouncementBar current={tickerItems[tickerIndex]} />
       <Header route={route} onNavigate={navigate} onBack={() => { if (window.history.length > 1) window.history.back(); else navigate('home'); }} mobileNav={mobileNav} onMobileNav={() => setMobileNav((open) => !open)} />
       <main>
